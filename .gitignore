@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+signup.html
+screen/templates/.DS_Store
+screen/screen/.DS_Store
+package.json
+package-lock.json
+NLServer/.DS_Store
+index.html
+.DS_Store
