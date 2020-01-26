@@ -15,7 +15,7 @@ sid = SentimentIntensityAnalyzer()
 # Call the prebuilt Sentiment ML algo
 stopWords = set(stopwords.words('english') + ["hate","dislike","like","love","hated","disliked","liked",'loved','today'])
 tokenizer = RegexpTokenizer(r'\w+')
-yeet = "I playing tennis. I learned about math. I like playing video"
+yeet = "I love running to the gym. I love running to the arena. I love running to the school. I like playing videogames. I love swimming. I love running"
 
 data = {}
 data['active'] = []
@@ -148,7 +148,7 @@ def start(text):
             
             vresult = simindexv(verb)
             
-            if (len(noun[0]) == 0):
+            if (len(noun) == 0):
                 child2(vresult, verb);
             else:
                 child3(vresult, verb,noun[0])

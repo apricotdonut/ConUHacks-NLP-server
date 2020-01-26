@@ -1,4 +1,4 @@
-"""NLServer URL Configuration
+"""screen URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from screen.myday.views import allday, oneday, passinfo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('all/',allday),
+    path('one/',oneday),
+    path('a/',passinfo),
+    
 ]
+#<int:day_id>'
