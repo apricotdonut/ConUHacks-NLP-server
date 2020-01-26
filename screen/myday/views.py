@@ -199,7 +199,6 @@ def allday(request):
     return render(request, 'days.html', context)
     
 def oneday(request):
-    
     #all_days = MyJournal.objects.all()
     
     a = MyJournal(content = data, date_created = datetime.date.today())
